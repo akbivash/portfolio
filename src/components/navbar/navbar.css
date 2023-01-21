@@ -1,0 +1,150 @@
+.nav{
+ position: relative;
+width: 100%;
+z-index:2222;
+
+}
+.nav_header{
+    box-shadow: 0 0 8px rgba(59, 128, 160, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    max-width: 1400px;
+    width: 100%;
+  height:120px;
+    display: flex;
+  color: #fff;
+justify-content: space-between;
+align-items: center;
+    font-family: 'Montserrat', sans-serif;
+padding: 0 25px;
+transition: .3s;
+}
+.nav_header.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background:var(--secondary-2);
+    transition:.4s;
+    
+}
+.nav_header .logo{
+    font-size: 1.7rem;
+    height: 5vh;
+}
+.nav_header .logo img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.nav_btns{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+   height: 100%;
+}
+
+.menu_icon{
+    position: relative;
+    transition: .4s ease;
+    cursor: pointer;
+font-size: 2rem;
+}
+.menu_icon span{
+    font-size: 1.7rem;
+
+}
+.menu_icon .hide_icon{
+opacity: 0;
+transition: all .4s ;
+cursor: pointer;
+
+}
+.menu_icon .show_icon{
+opacity: 1;
+transition: all .4s ;
+}
+.nav_center{
+    background: linear-gradient(   
+rgba(6, 100, 126, 0.761),
+ rgba(41, 76, 79, 0.8));
+width: 0;
+top: 0;
+height: 100%;
+transition-delay: .3s;
+   position: fixed;
+   right: -100%;
+transition-duration: .4s;
+}
+
+.show_nav_center{
+transition: .2s;
+right: 0;
+top: 0;
+width: 100%;
+background: linear-gradient(   
+rgba(6, 100, 126, 0.761),
+ rgba(41, 76, 79, 0.8))
+
+}
+
+
+
+.nav_header .resume_btn {
+    position: relative;
+    transition: .4s;
+   font-size:1.4rem;
+    text-decoration: none;
+    
+}
+.resume_btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav_header.fixed .resume_btn a,.nav_header.fixed .menu_icon {
+    color: var(--primary-3);
+}
+
+.resume_btn::after{
+    transition: .2s;
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+background: var(--primary-2);
+    height: 2px;
+    bottom: -.2rem;
+}
+.resume_btn:hover::after{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 620px) {
+
+ .nav_header{
+    padding: 0 60px;
+ }
+
+}
+
+@media screen and (min-width: 1020px) {
+
+ .nav_header {
+    padding: 0 100px;
+ 
+ }
+.nav .logo{
+  height: 3rem;
+}
+.nav .nav_btns .menu_icon{
+    font-size: 3rem;
+}
+}
+
+
+
+

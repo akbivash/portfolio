@@ -1,0 +1,34 @@
+#skills {
+  min-height: 88vh;
+}
+
+.skills .skill {
+  background: var(--secondary-2);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.skills_container .skill .info h2 {
+  margin: 1rem 1rem 2rem;
+  color: var(--primary-3);
+}
+.skills_container .skill ul {
+  display: grid;
+  gap: 1rem;
+  color: var(--dark-2);
+  font-size: 1.3rem;
+}
+
+.skills_container .skill img {
+  height: 4rem;
+}
+
+.skills_container .skills {
+  display: grid;
+  gap: 1rem;
+  /* padding:0 10px ; */
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
