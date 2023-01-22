@@ -60,8 +60,6 @@ navRef.current.classList.remove('fixed')
         </div>
 {/* end of buttons  */}
       </div>
-
-    
    
     </div>
   );

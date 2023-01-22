@@ -24,7 +24,7 @@ const About = () => {
                 </motion.div>
               </span>
               <div className="moving_text">
-                <Typewriter words={["developer", "designer"]} />
+              I'm a  <Typewriter words={["developer", "designer"]} />
               </div>
             </div>
             <motion.div

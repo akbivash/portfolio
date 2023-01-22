@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import {motion} from 'framer-motion'
 import { useState } from "react";
 import { useEffect } from "react";
+import { socialIcons } from "../../assets/icons";
 
 const Contact = () => {
   const[isLoading, setIsLoading] = useState(false)
@@ -41,6 +42,7 @@ setIsLoading(true)
   }, [emailSent]);
 
   return (
+    <>
     <motion.div className="contact" 
          initial={{opacity:0, y:20}}
    whileInView={{opacity:1, y:0}}
@@ -93,6 +95,27 @@ setIsLoading(true)
       }
     
     </motion.div>
+    <motion.div
+              className="social_icons_container"
+              transition={{ delay: 2 }}
+            >
+              {socialIcons.map((icon, i) => {
+                return (
+                  <motion.a
+                    href={icon.link}
+                    target="_blank"
+                    key={icon.link}
+                    initial={{ opacity: 0, y: -10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.1 }}
+                  >
+                    {icon.icon}
+                  </motion.a>
+                );
+              })}
+            </motion.div>
+
+    </>
   );
 };
 

@@ -42,7 +42,7 @@ const LatestProject = () => {
             transition={{ duration: .7, delay:.9 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-          href="">See project </motion.a>
+          href="https://fashionepafrontend.onrender.com" target="_blank">See project </motion.a>
         </div>
       </div>
    
