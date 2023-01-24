@@ -2,6 +2,8 @@
   min-height: 88vh;
   position: relative;
   overflow: hidden;
+
+
 }
 .service_container {
   position: relative;
@@ -13,11 +15,11 @@
   height: 40%;
   bottom: 0;
   left: 0;
-  background: var(--secondary-2);
+  background: var(--secondary-3);
   transform: rotate(-15deg);
   z-index: -2;
   border-radius: 2rem;
-  clip-path: polygon(100% 10%, 100% 0%, 10% 100%, 100% 98%, 0 0);
+  clip-path: polygon(10% 100%, 100% 30%, 100% 100%, 100% 98%, 0 0);
 }
 .services {
   position: relative;
@@ -50,4 +52,11 @@
 .service p {
   line-height: 1.4;
   font-size: 1.4rem;
+}
+
+@media screen and (max-width:350px) {
+  .services{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  }
 }

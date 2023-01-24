@@ -8,73 +8,82 @@ const About = () => {
   return (
     <>
       <div className="about">
-        <div className="gradient"></div>
 
-        <div className="top">
-          <div className="top_content">
-            <div className="title">
-              <span className="name">
-                <motion.div
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <h2>Dipshikha</h2>
-                  <h2>Adhikari</h2>
-                </motion.div>
-              </span>
-              <div className="moving_text">
-              I'm a  <Typewriter words={["developer", "designer"]} />
-              </div>
+      <div className="top">
+    <motion.div className="greeting"
+    whileInView={{x:[-10,0]}}
+    transition={{duration:.5}}
+    >
+    <h3>Hello, </h3><h1>Welcome!</h1>
+      
+   
+    </motion.div>
+       <div className="profession">
+             <span> I'm </span>
+
+          {/* <span>   <Typewriter words={["Developer", "UI Designer"]} /></span> */}
             </div>
-            <motion.div
-              className="social_icons_container"
-              transition={{ delay: 2 }}
-            >
-              {socialIcons.map((icon, i) => {
-                return (
-                  <motion.a
-                    href={icon.link}
-                    target="_blank"
-                    key={icon.link}
-                    initial={{ opacity: 0, y: -10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: i * 0.1 }}
-                  >
-                    {icon.icon}
-                  </motion.a>
-                );
-              })}
-            </motion.div>
-          </div>
-          {/* end of top content  */}
-
-         {/* img container  */}
+          </div> 
+      
+         {/* end of top   */}
+        <div className="bottom">
+        
           <motion.div
             className="img_container"
-            initial={{ x: 10 }}
-            whileInView={{ opacity: [0, 1], x: 0 }}
+            // initial={{ x: 10 }}
+            whileInView={{ opacity: [0, 1]}}
             transition={{ duration: 0.5 }}
           >
             <img
-              src="https://scontent.fbhr1-1.fna.fbcdn.net/v/t1.6435-9/185209661_2936085376660919_5178820856626075728_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=oB9tjoxjzaIAX9oaC-k&_nc_ht=scontent.fbhr1-1.fna&oh=00_AfDmaX8EbNbWUEFOLElge-im7vN0M4oY4xIwOaQDWlbDOA&oe=63D085FF"
+              src={require('../../assets/images/biv.jpg')}
               alt=""
             />
           </motion.div>
-        </div>
-        {/* end of top  */}
-        <div className="bottom">
-          <motion.p
-            whileInView={{ opacity: [0, 1], y:[10,0] }}
+          
+         <div className="details">
+
+         <motion.div
+         className="paragraph"
+            whileInView={{ opacity: [0, 1], y: [10, 0] }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            I am passionate about building excellent websites that improves the
-            lives of people around the world. I specialize in creating frontend
+           <span> I am passionate about building excellent websites that improves the
+            lives of people around the world.</span>
+             I specialize in creating frontend
             design to backend for clients ranging from individuals and
             small-businesses all the way to large enterprise corporations.
-          </motion.p>
+            </motion.div>
+
+            <motion.div className="name"
+                 whileInView={{opacity:[0,1], y:[10,0]}}
+          transition={{duration:1}}
+            >
+          <h2
+          >Dipshikha Adhikari</h2>
+         </motion.div>
+              <motion.div
+                className="social_icons_container"
+                transition={{ delay: 2 }}
+              >
+                {socialIcons.map((icon, i) => {
+                  return (
+                    <motion.a
+                      href={icon.link}
+                      target="_blank"
+                      key={icon.link}
+                      initial={{ opacity: 0, y: -10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: i * 0.1 }}
+                    >
+                      {icon.icon}
+                    </motion.a>
+                  );
+                })}
+              </motion.div>
+         </div>
+         </div>
         </div>
-      </div>
+    
     </>
   );
 };

@@ -11,9 +11,9 @@ import MoreProjects from "./pages/projects/MoreProjects";
 const App = () => {
   return (
     <div className="app">
+  
       <div className="app_main">
-        <Navbar />
-        <div>
+      <Navbar />
           <div id="home">
             <LatestProject />
           </div>
@@ -35,7 +35,6 @@ const App = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

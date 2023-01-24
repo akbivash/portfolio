@@ -11,7 +11,7 @@ const SidebarContainer = ({ isMenuOpen, closeMenu }) => {
   
     let id = e.target.getAttribute("href").slice(1);
     var elem = document.getElementById(id);
-    const location = elem.offsetTop - 80;
+    const location = elem.offsetTop - 70
    setTimeout(() => {
     window.scrollTo({
       left: 0,
@@ -19,11 +19,7 @@ const SidebarContainer = ({ isMenuOpen, closeMenu }) => {
       behavior: "smooth",
     });
    },500)
-
- 
-  
     closeMenu();
-    // }
   }
 
   return (

@@ -36,6 +36,7 @@ const LatestProject = () => {
           >
             Combine with ideas of owner, Anonymous . Designed an awesome
             E-commerce app with super exciting features.
+
           </motion.p>
           <motion.a 
            initial={{ opacity: 0, y: 10 }}

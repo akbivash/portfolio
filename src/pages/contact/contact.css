@@ -5,7 +5,7 @@
   margin-top: 1rem;
   z-index: 2;
   overflow: hidden;
- 
+ padding-bottom:1rem;
 }
 
 .contact form {
@@ -39,7 +39,7 @@
 
 .contact .submit_btn {
   max-width: 200px;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 100%;
   font-size: 1.4rem;
   background: var(--primary-2);
@@ -82,6 +82,15 @@
   animation: animate 0.7s linear infinite;
 }
 
+#contact .social_icons_container{
+  display: flex;
+  justify-content: center;
+padding-bottom:10px;
+}
+
+.heading{
+  font-size: 2rem;
+}
 @keyframes animate {
   0% {
     width: 0%;
@@ -91,8 +100,4 @@
   }
 }
 
-@media screen and (min-width: 750px) {
-  .heading {
-    font-size: 1.4rem;
-  }
-}
+

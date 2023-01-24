@@ -29,8 +29,9 @@ setIsLoading(true)
        
       })
       .catch((err) => console.log(err));
+      
     e.target.reset();
-
+    return
   };
 
   useEffect(() => {
@@ -48,9 +49,7 @@ setIsLoading(true)
    whileInView={{opacity:1, y:0}}
    transition={{duration:.4}}
     >
-      <div className="heading">
-        <h2> Want a conversation !</h2>
-      </div>
+        <h2 className="heading"> Want a conversation !</h2>
       <form ref={form} onSubmit={sendEmail} className={`${showMessage && isLoading ? "blur form":"form"}`}>
         <div className="form_control">
           <label htmlFor="">Name</label>

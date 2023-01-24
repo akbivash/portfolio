@@ -18,6 +18,7 @@ font-family: 'Shadows Into Light', cursive; */
  --dark-1: #424444;
  --dark-2: #6a8989;
  --dark-3: #417676;
+ --lime-1:rgb(183, 208, 162);
  
   
 }
@@ -45,7 +46,7 @@ scroll-behavior: smooth;
 .app{
     width: 100%;
     background:var(--secondary-1);
-
+/* background:var(--primary-2); */
 }
 .app_main{
     position: relative;
@@ -53,7 +54,6 @@ max-width: 1400px;
 width: 100%;
 margin: 0 auto;
 z-index: 2;
-padding:4px;
 overflow:hidden;
 }
 
@@ -63,7 +63,7 @@ width:100%;
 overflow:hidden;
 
 }
-#about::after{
+/* #about::after{
     position: absolute;
     content: "";
     width: 100%;
@@ -74,7 +74,7 @@ overflow:hidden;
     transform: rotate(15deg);
     z-index: -2;
     border-radius: 2rem;
-}
+} */
  .app_main .heading{
   position: relative;
   text-align: center;
@@ -86,10 +86,12 @@ opacity:.7;
 }
 
 
-
+#about, #skills, #services, #contact{
+    padding:0 10px;
+}
 
 @media screen and (min-width:1020px) {
     .app_main .heading{
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 }

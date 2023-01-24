@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes, FaAngleDoubleRight } from "react-icons/fa";
-import { links } from "../../assets/links";
 import pdf from "../../assets/Frontend_dev_resume.pdf";
 import SidebarContainer from "../sidebar/Sidebar";
 
@@ -11,6 +10,7 @@ import SidebarContainer from "../sidebar/Sidebar";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 const navRef = useRef()
+
   useEffect(() =>{
 window.addEventListener('scroll', (e) => {
 if(e.currentTarget.scrollY > 0){

@@ -6,7 +6,7 @@ export const projects = [
     name: "Cloth House",
     desc: "A basic cart application frontend design",
     category: "e-commerce",
-    img: require("./images/clothhouse.jpg"),
+    img: require("./images/clothhous.png"),
     link: "https://gleeful-sable-8bdd2a.netlify.app/",
   },
   
@@ -22,10 +22,10 @@ export const projects = [
 
   {
     id: 1123,
-    name: "NFT marketplace landing page",
+    name: "NFT marketplace ",
     desc: "Opensea company homepage",
     category: "finance",
-    img: require("./images/nft.jpg"),
+    img: require("./images/nft1.png"),
     link: "https://gleeful-sable-8bdd2a.netlify.app/",
   },
   {
@@ -42,7 +42,7 @@ export const projects = [
     name: "NFT marketplace landing page",
     desc: "Opensea company homepage",
     category: "finance",
-    img: require("./images/nft.jpg"),
+    img: require("./images/nft1.png"),
     link: "https://gleeful-sable-8bdd2a.netlify.app/",
   },
   {
