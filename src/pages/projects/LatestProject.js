@@ -34,8 +34,8 @@ const LatestProject = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Combine with ideas of owner, Anonymous . Designed an awesome
-            E-commerce app with super exciting features.
+            Combine with ideas of owner, Anonymous . Designed a full stack
+            E-commerce app with super cool features.
 
           </motion.p>
           <motion.a 

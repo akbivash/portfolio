@@ -80,7 +80,7 @@ const SidebarItem = ({ link, handleLinksClick}) => {
                           height: `2.5rem`,
                           transition: ".3s",
                           transform:'translateX(0px)',
-                          borderBottom: "1px solid var(--primary-3)",
+                          borderBottom: "1px solid var(--primary-2)",
                         }
                          
                       : { height: `0`, transform:'translateX(100px)', transition: ".3s", borderBottom: "none" }

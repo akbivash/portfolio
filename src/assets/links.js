@@ -16,11 +16,11 @@ export  let links = [
     sublinks:[
         {
             id:2224,
-            name:'proj',
+            name:'frontend',
             link:'/projects'
         },{
             id:2225,
-            name:'projec',
+            name:'full stack',
             link:'/projects'
         }
       ]

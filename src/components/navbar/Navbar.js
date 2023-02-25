@@ -9,18 +9,13 @@ import SidebarContainer from "../sidebar/Sidebar";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-const navRef = useRef()
+const navRef = useRef(null)
 
   useEffect(() =>{
-window.addEventListener('scroll', (e) => {
-if(e.currentTarget.scrollY > 0){
-navRef.current.classList.add('fixed')
-}else{
-navRef.current.classList.remove('fixed')
+window.addEventListener('scroll', handleScroll)
 
-}
-})
-  },[])
+return () => window.removeEventListener('scroll', handleScroll)
+  },[navRef])
 
  function handleMenu(){
   setIsMenuOpen(prev => !prev)
@@ -30,7 +25,17 @@ navRef.current.classList.remove('fixed')
   setIsMenuOpen(false)
  }
   
-
+ function handleScroll(e){
+ if(navRef.current !== null){
+  if(e.currentTarget.scrollY > 0){
+    navRef.current.classList.add('fixed')
+    }else{
+    navRef.current.classList.remove('fixed')
+    
+    }
+ }
+ }
+ 
   return (
     <div className="nav " >
       {/* nav header  */}

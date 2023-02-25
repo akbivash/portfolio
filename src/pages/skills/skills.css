@@ -13,7 +13,7 @@
 }
 .skills_container .skill .info h2 {
   margin: 1rem 1rem 2rem;
-  color: var(--primary-3);
+  color: var(--primary-2);
 }
 .skills_container .skill ul {
   display: grid;

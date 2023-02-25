@@ -7,7 +7,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // We import object and document schemas
 import skills from './skills'
 import services from './services'
-
+import finishedProjects from './finishedProjects'
+import incompleteProjects from './incompleteProjects'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -18,7 +19,9 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
 skills,
-services
+services,
+finishedProjects,
+incompleteProjects
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     // blockContent,

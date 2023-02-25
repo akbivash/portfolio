@@ -24,7 +24,7 @@ const App = () => {
             <Services />
           </div>
           <div id="projects">
-            <h2 className="heading">More projects</h2>
+           
             <MoreProjects />
           </div>
           <div id="skills">

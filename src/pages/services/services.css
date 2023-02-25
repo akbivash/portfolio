@@ -26,16 +26,18 @@
   display: grid;
   gap: 1rem;
   z-index: 22;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
 .services .service {
   position: relative;
   padding: 1rem;
   border-radius: 7px;
-  display: grid;
-  justify-content: center;
-  height: 340px;
+display: flex;
+gap: 1rem;
+flex-direction: column;
+  height: 350px;
   transition: 0.3s;
   color: var(--dark-2);
   background: var(--secondary-2);
@@ -43,13 +45,19 @@
 .service h4 {
   font-size: 1.7rem;
   letter-spacing: 1.4px;
+  flex: 1;
+color:var(--primary-2)
 }
-.services .service img {
+.services .service .img_container {
+flex: 2;
+ 
+}
+.service img{
   width: 100px;
   height: 100px;
-  color: red;
 }
 .service p {
+flex: 1;
   line-height: 1.4;
   font-size: 1.4rem;
 }

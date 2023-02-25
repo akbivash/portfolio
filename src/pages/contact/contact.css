@@ -27,7 +27,7 @@
 .form_control textarea {
   padding: 10px;
   outline: none;
-  border-radius: 10px;
+  border-radius: 5px;
   /* border */
   border: none;
 }
@@ -45,6 +45,7 @@
   background: var(--primary-2);
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .contact .msg_box {
@@ -83,9 +84,8 @@
 }
 
 #contact .social_icons_container{
-  display: flex;
-  justify-content: center;
 padding-bottom:10px;
+margin: 0 auto;
 }
 
 .heading{

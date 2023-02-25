@@ -33,8 +33,10 @@ const[services, setServices] = useState([])
            
               >
              <div className="service" key={service.id}>
-            <h4 style={{color: 'var(--primary-3)'}}>{service.name}</h4>
-        <img src={urlFor(service.icon.asset._ref)} alt="image" />
+            <h4 >{service.name}</h4>
+       <div className="img_container">
+       <img src={urlFor(service.icon.asset._ref)} alt="image" />
+       </div>
         <p>{service.desc}</p>
 
         </div>

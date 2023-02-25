@@ -20,6 +20,9 @@ color: var(--lime-1);
 .profession{
   text-align: center;
   display: grid;
+  text-overflow: clip;
+/* overflow: hidden;
+white-space: nowrap; */
 }
 .profession span {
   background: -webkit-linear-gradient(var(--primary-1), rgb(121, 226, 111));
@@ -29,6 +32,11 @@ color: var(--lime-1);
   height: max-content;
 }
 
+@media screen and (max-width:320px) {
+  .profession span {
+    font-size: 2rem;
+  }
+}
 
 /* bottom  */
 .about .bottom{
@@ -63,7 +71,6 @@ color: var(--lime-1);
   border-bottom: 2px solid var(--primary-1);
   border-radius: 10px;
   width: fit-content;
-  margin: 0 auto;
   padding-bottom: 1rem;
 }
 .social_icons_container a {
@@ -111,6 +118,9 @@ color: var(--lime-1);
   width: 60%;
   align-items: baseline;
   justify-content: center;
+}
+.social_icons_container, .about .bottom .name{
+  margin: 0 auto;
 }
 }
 

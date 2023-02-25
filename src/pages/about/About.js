@@ -21,7 +21,7 @@ const About = () => {
        <div className="profession">
              <span> I'm </span>
 
-          {/* <span>   <Typewriter words={["Developer", "UI Designer"]} /></span> */}
+          <span>   <Typewriter words={["Developer", "Freelancer"]} /></span>
             </div>
           </div> 
       
