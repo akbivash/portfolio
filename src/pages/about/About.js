@@ -20,14 +20,12 @@ const About = () => {
     </motion.div>
        <div className="profession">
              <span> I'm </span>
-
-          <span>   <Typewriter words={["Developer", "Freelancer"]} /></span>
+          {/* <span>   <Typewriter words={["Developer", "Freelancer"]} /></span> */}
             </div>
           </div> 
       
          {/* end of top   */}
         <div className="bottom">
-        
           <motion.div
             className="img_container"
             // initial={{ x: 10 }}
@@ -41,7 +39,6 @@ const About = () => {
           </motion.div>
           
          <div className="details">
-
          <motion.div
          className="paragraph"
             whileInView={{ opacity: [0, 1], y: [10, 0] }}

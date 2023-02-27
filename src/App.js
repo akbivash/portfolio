@@ -13,7 +13,9 @@ const App = () => {
     <div className="app">
   
       <div className="app_main">
-      <Navbar />
+  
+   <Navbar />
+
           <div id="home">
             <LatestProject />
           </div>

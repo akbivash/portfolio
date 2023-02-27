@@ -24,7 +24,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
-  max-width: 900px;
   width: 100%;
   color: aliceblue;
 
@@ -40,6 +39,8 @@
 .latest_project .content p {
   line-height: 1.5;
   font-size: 1.4rem;
+  max-width: 1000px;
+
 }
 .latest_project .content a {
   text-decoration: none;
@@ -51,6 +52,15 @@
   border-radius: 8px;
   animation: animateBtn 3s linear infinite;
   font-size: 1.4rem;
+}
+.latest_project .links{
+  display: flex;
+gap: 2rem;
+align-items: center;
+}
+.latest_project .links .github{
+color: aliceblue;
+font-size: 3rem;
 }
 
 @keyframes animateBtn {
@@ -98,7 +108,9 @@
 }
 
 /* more projects  */
-
+.more_projects{
+  overflow: hidden;
+}
 .more_projects .category{
 display: flex;
 gap: 5px;
@@ -110,13 +122,14 @@ padding-bottom:5px;
   border: none;
   padding:  10px;
   border-radius: 5px;
-  /* color: var(--primary-2); */
-  color: var(--lime-1);
+  color: var(--primary-2);
+  /* color: var(--lime-1); */
 
   font-size: 1.4rem;
   cursor: pointer;
+  
 }
 .more_projects .category button.active{
-  background: var(--primary-3);
-  color: var(--lime-1);
+  background: var(--primary-1);
+  color: var(--secondary-3);
 }

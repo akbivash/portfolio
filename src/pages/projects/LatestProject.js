@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./projects.css";
 import { motion } from "framer-motion";
+import { AiOutlineGithub } from "react-icons/ai";
 
 const LatestProject = () => {
   return (
@@ -26,7 +27,7 @@ const LatestProject = () => {
             transition={{ duration: .7 , delay:.3}}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            Fashio Nepal
+            FashioNepal
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -34,16 +35,21 @@ const LatestProject = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Combine with ideas of owner, Anonymous . Designed a full stack
-            E-commerce app with super cool features.
+          Combine with ideas of myself, completed a full stack e-commerce app with super cool features. 
+          Stripe for payment and Redux Toolkit for state management are used.
 
           </motion.p>
+          <div className="links">
           <motion.a 
            initial={{ opacity: 0, y: 10 }}
             transition={{ duration: .7, delay:.9 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           href="https://fashionepafrontend.onrender.com" target="_blank">See project </motion.a>
+             <a href='https://github.com/akbivash/portfolio' target='_blank' className="github">
+                                        <AiOutlineGithub />
+                                    </a>
+          </div>
         </div>
       </div>
    

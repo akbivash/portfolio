@@ -2,20 +2,22 @@
  position: relative;
 width: 100%;
 z-index:2222;
+width:100%;
+display: flex;
+justify-content: center;
 }
 .nav_header{
     position: fixed;
 top: 0;
 width: 100%;
 padding: 0 20px;
-
 height: 100px;
-max-width: 1400px;
     box-shadow: 0 0 8px rgba(59, 128, 160, 0.2);
     margin: 0 auto;
     display: flex;
   color: #fff;
 justify-content: space-between;
+
 align-items: center;
 transition: .3s;
 }
@@ -23,10 +25,12 @@ transition: .3s;
     height: 70px;
     background:var(--secondary-2);
     transition:.4s;
+
+
 }
 .nav_header .logo{
     font-size: 1.7rem;
-    height: 5vh;
+    height: 4vh;
 }
 .nav_header .logo img{
     height: 100%;
@@ -129,7 +133,6 @@ background: var(--primary-2);
 
  .nav_header {
     padding: 0 100px;
- 
  }
 .nav .logo{
   height: 3rem;
@@ -140,5 +143,10 @@ background: var(--primary-2);
 }
 
 
-
+@media screen and (min-width:1400px) {
+    .nav_header{
+        justify-content: center;
+        gap: 1000px;
+    }
+}
 

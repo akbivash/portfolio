@@ -38,11 +38,10 @@ body {
 .app {
   width: 100%;
   background: var(--secondary-1);
-  /* background:var(--primary-2); */
+
 }
 .app_main {
   position: relative;
-  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   z-index: 2;
@@ -68,7 +67,12 @@ body {
 #about,
 #skills,
 #services,
-#contact {
+#contact ,
+/* .nav, */
+.more_projects,
+.latest_project .content{
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
