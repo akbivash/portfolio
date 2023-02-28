@@ -20,7 +20,7 @@ const About = () => {
     </motion.div>
        <div className="profession">
              <span> I'm </span>
-          {/* <span>   <Typewriter words={["Developer", "Freelancer"]} /></span> */}
+          <span>   <Typewriter words={["Developer", "Freelancer"]} /></span>
             </div>
           </div> 
       

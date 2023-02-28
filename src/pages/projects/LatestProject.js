@@ -35,7 +35,7 @@ const LatestProject = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-          Combine with ideas of myself, completed a full stack e-commerce app with super cool features. 
+           A simple full stack e-commerce app with cool features. 
           Stripe for payment and Redux Toolkit for state management are used.
 
           </motion.p>
