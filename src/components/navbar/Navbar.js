@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes, FaAngleDoubleRight } from "react-icons/fa";
-import pdf from "../../assets/Frontend_dev_resume.pdf";
+// import pdf from "../../assets/Frontend_dev_resume.pdf";
 import SidebarContainer from "../sidebar/Sidebar";
 
 
@@ -46,7 +46,7 @@ return () => window.removeEventListener('scroll', handleScroll)
         {/* right nav buttons  */}
         <div className="nav_btns">
           <div className="resume_btn ">
-            <a href={pdf} target="_blank">
+            <a href='https://flowcv.com/resume/skdgps051g' target="_blank">
               {" "}
            
               Resume
